@@ -1,12 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <title>First github page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Speciális Kutató-Mentő Szolgálat – Önkéntes mentőszervezet, amely veszélyhelyzetekben segíti a hivatalos szerveket." />
+  <title>Speciális Kutató-Mentő Szolgálat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
-<p>Welcome to my github page</p>
 
+  <!-- ── NAVIGÁCIÓ ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.jpg" alt="SKSZ logó" class="nav-logo-img" />
+        <span>SKSZ</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü megnyitása" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#rolunk" onclick="closeMenu()">Rólunk</a></li>
+        <li><a href="#tevekenysegek" onclick="closeMenu()">Tevékenységek</a></li>
+        <li><a href="#tamogatas" onclick="closeMenu()">Támogatás</a></li>
+        <li><a href="#kapcsolat" onclick="closeMenu()">Kapcsolat</a></li>
+        <li><a href="#kapcsolat" class="nav-cta" onclick="closeMenu()">Csatlakozz!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="logo.jpg" alt="Speciális Kutató-Mentő Szolgálat logó" class="hero-logo" />
+      <p class="hero-eyebrow">Önkéntes mentőszervezet · Budapest</p>
+      <h1>Speciális Kutató-Mentő<br>Szolgálat</h1>
+      <p class="hero-subtitle">Ott vagyunk, amikor a legjobban számít.<br>Árvíznél, eltűnt személyek keresésénél, rendezvénybiztosításnál.</p>
+      <div class="hero-actions">
+        <a href="#kapcsolat" class="btn-primary">Csatlakozz hozzánk</a>
+        <a href="#rolunk" class="btn-outline">Tudj meg többet</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Görgess</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ── SZÁMOK ─────────────────────────────────────────────── -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">2011</span>
+          <span class="stat-label">Alapítva</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Bevetés</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Készenlét</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">0 Ft</span>
+          <span class="stat-label">Tagdíj</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RÓLUNK ─────────────────────────────────────────────── -->
+  <section id="rolunk">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Rólunk</span>
+        <h2>Kik vagyunk?</h2>
+        <p>A Speciális Kutató-Mentő Szolgálat egy önkéntes, nonprofit szervezet, amely veszélyhelyzetek és katasztrófák esetén segíti a hivatásos mentőszerveket. Tagjaink saját idejüket és energiájukat áldozzák arra, hogy mások biztonságban legyenek.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="text-block">
+          <h3>Küldetésünk</h3>
+          <p>Célunk, hogy képzett, felszerelt és azonnal bevethető önkéntes erőként álljunk rendelkezésre minden olyan helyzetben, ahol polgári életeket kell menteni vagy veszélyhelyzeteket kezelni. Szorosan együttműködünk a rendőrséggel, a tűzoltósággal és a katasztrófavédelemmel.</p>
+          <ul class="check-list">
+            <li>Szakmailag képzett önkéntes tagok</li>
+            <li>Korszerű felszerelés és eszközök</li>
+            <li>Gyors reagálás, koordinált csapatmunka</li>
+            <li>Rendszeres gyakorlatok és tréningek</li>
+          </ul>
+        </div>
+        <div class="info-card-group">
+          <div class="info-card">
+            <span class="info-card-icon">🏛️</span>
+            <div>
+              <strong>Jogi forma</strong>
+              <p>Bejegyzett egyesület</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-card-icon">📋</span>
+            <div>
+              <strong>Nyilvántartási szám</strong>
+              <p>01-02-0018241</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-card-icon">🔖</span>
+            <div>
+              <strong>Adószám</strong>
+              <p>19386423-1-42</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-card-icon">📍</span>
+            <div>
+              <strong>Székhely</strong>
+              <p>Budapest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEVÉKENYSÉGEK ──────────────────────────────────────── -->
+  <section id="tevekenysegek">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tevékenységek</span>
+        <h2>Amit csinálunk</h2>
+        <p>Sokféle helyzetben bevethetőek vagyunk – a természeti katasztróféktól kezdve a rendezvénybiztosításon át az eltűnt személyek kereséséig.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="activity-card">
+          <div class="activity-icon">🌊</div>
+          <h3>Árvízvédelem</h3>
+          <p>Homokzsákolás, gáterősítés, evakuáció segítése. Aktívan részt vettünk magyarországi árvízi védekezésekben.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">🔍</div>
+          <h3>Kutatás-mentés</h3>
+          <p>Eltűnt személyek keresése erdőben, lakott területen és nehezen megközelíthető helyszíneken, koordinálva a rendőrséggel.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">🏟️</div>
+          <h3>Rendezvénybiztosítás</h3>
+          <p>Sportrendezvények, fesztiválok és közösségi események biztonságának támogatása elsősegélynyújtással és koordinációval.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">🚒</div>
+          <h3>Katasztrófa-segítség</h3>
+          <p>Együttműködés a hivatásos szervekkel egyéb veszélyhelyzetek esetén – szélvihar, tűzeset utáni mentési munkálatok.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">🩺</div>
+          <h3>Elsősegélynyújtás</h3>
+          <p>Tagjaink elsősegélynyújtásban képzettek, és bevetéseken azonnali ellátást tudnak nyújtani szükség esetén.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">📡</div>
+          <h3>Kommunikáció & Logisztika</h3>
+          <p>Rádióalapú kommunikáció, helyszíni koordináció és logisztikai támogatás nagyobb bevetések során.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TÁMOGATÁS ──────────────────────────────────────────── -->
+  <section id="tamogatas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Támogatás</span>
+        <h2>Segíts te is!</h2>
+        <p>Munkánk kizárólag önkéntesek és támogatók segítségével valósul meg. Nincs tagdíj – csak elkötelezettség és akarat szükséges.</p>
+      </div>
+
+      <div class="support-grid">
+        <div class="support-card highlight">
+          <div class="support-icon">🙋</div>
+          <h3>Legyél önkéntes!</h3>
+          <p>Ha szeretnél aktívan részt venni a munkánkban, csatlakozz hozzánk! Nem kell előképzettség – mi megtanítunk mindent.</p>
+          <a href="#kapcsolat" class="btn-primary">Jelentkezés</a>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">💛</div>
+          <h3>1% felajánlás</h3>
+          <p>Ha személyi jövedelemadódat befizeted, annak <strong>1%-át</strong> nekünk ajánlhatod fel – ez neked semmibe nem kerül, nekünk sokat jelent.</p>
+          <div class="adoszam-box">
+            <span class="adoszam-label">Adószámunk:</span>
+            <span class="adoszam-value">19386423-1-42</span>
+          </div>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">💰</div>
+          <h3>Pénzbeli adomány</h3>
+          <p>Felszereléseink karbantartása és fejlesztése folyamatos költséggel jár. Adományodat az alábbi bankszámlaszámra tudod utalni:</p>
+          <div class="adoszam-box">
+            <span class="adoszam-label">Bankszámlaszám:</span>
+            <span class="adoszam-value">11702012-21458549</span>
+          </div>
+          <p class="support-transfer-note">Megjegyzésnek kérjük feltüntetni: <em>„Adomány"</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── KAPCSOLAT ──────────────────────────────────────────── -->
+  <section id="kapcsolat">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kapcsolat</span>
+        <h2>Lépj velünk kapcsolatba</h2>
+        <p>Kérdésed van? Csatlakoznál? Írj nekünk bátran – minden megkeresésre válaszolunk.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Elérhetőségeink</h3>
+
+          <a href="mailto:speckutatomento@gmail.com" class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>E-mail</strong>
+              <span>speckutatomento@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+36307207770" class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Telefon</strong>
+              <span>+36 30 720 7770</span>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/speckmsz" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">📘</span>
+            <div>
+              <strong>Facebook</strong>
+              <span>facebook.com/speckmsz</span>
+            </div>
+          </a>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Székhely</strong>
+              <span>Budapest, Magyarország</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>Csatlakozás / Üzenet</h3>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <label>
+              Neved
+              <input type="text" name="name" placeholder="Kovács János" required />
+            </label>
+            <label>
+              E-mail címed
+              <input type="email" name="email" placeholder="pelda@email.hu" required />
+            </label>
+            <label>
+              Téma
+              <select name="subject">
+                <option value="csatlakozas">Csatlakoznék önkéntesként</option>
+                <option value="adomany">Adományozás</option>
+                <option value="egyeb">Egyéb kérdés</option>
+              </select>
+            </label>
+            <label>
+              Üzenet
+              <textarea name="message" rows="4" placeholder="Írj néhány szót..."></textarea>
+            </label>
+            <button type="submit" class="btn-primary btn-full">Küldés</button>
+            <p class="form-note">Az üzenet az e-mail kliensedben nyílik meg.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LÁBLÉC ─────────────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="SKSZ logó" class="footer-logo-img" />
+          <strong>Speciális Kutató-Mentő Szolgálat</strong>
+          <p>Önkéntes mentőszervezet · Budapest</p>
+        </div>
+        <div class="footer-links">
+          <a href="#rolunk">Rólunk</a>
+          <a href="#tevekenysegek">Tevékenységek</a>
+          <a href="#tamogatas">Támogatás</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:speckutatomento@gmail.com">speckutatomento@gmail.com</a>
+          <a href="tel:+36307207770">+36 30 720 7770</a>
+          <a href="https://www.facebook.com/speckmsz" target="_blank" rel="noopener">Facebook oldal</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Nyilvántartási szám: 01-02-0018241 · Adószám: 19386423-1-42</span>
+        <span>© 2025 Speciális Kutató-Mentő Szolgálat</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

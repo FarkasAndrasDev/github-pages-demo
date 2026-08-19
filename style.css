@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/barlow-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/barlow-500.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/barlow-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/barlow-condensed-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/barlow-condensed-800.ttf') format('truetype');
+}
+
 :root {
   --black:        #0a0a0a;
   --black-mid:    #111111;
@@ -510,6 +546,19 @@ section { padding: 100px 0; }
   font-size: 14px; color: var(--text-muted); transition: color 0.2s;
 }
 .footer-links a:hover, .footer-contact a:hover { color: var(--orange); }
+.footer-legal {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border-top: 1px solid var(--black-border);
+  padding-top: 32px;
+  margin-bottom: 28px;
+}
+.footer-legal-col { display: flex; flex-direction: column; gap: 6px; }
+.footer-legal-col p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+.footer-legal-col a { color: var(--text-muted); transition: color 0.2s; }
+.footer-legal-col a:hover { color: var(--orange); }
+.footer-legal-col strong { color: var(--text); }
+
 .footer-bottom {
   border-top: 1px solid var(--black-border); padding-top: 22px;
   display: flex; justify-content: space-between; flex-wrap: wrap;
@@ -538,6 +587,7 @@ section { padding: 100px 0; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .stats-grid   { grid-template-columns: 1fr 1fr; }
   .footer-grid  { grid-template-columns: 1fr; }
+  .footer-legal { grid-template-columns: 1fr; }
   .join-card    { padding: 32px 20px; }
   .nav-links {
     display: none; flex-direction: column;

@@ -1,3 +1,5 @@
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
